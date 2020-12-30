@@ -74,7 +74,7 @@ class segdocument(object):
         #pattern = re.compile('[：“。”，！？、《》……；’‘\n——\r\t）、（——^[1-9]d*$]')
         #pattern = re.compile('[\s+\.\!\/_,$%^*(+\"\']+|[+——！，。？?：、~@#”“￥：%……&*（）]+|[[A-Za-z0-9]*$]'.decode('utf-8'))
         pattern = re.compile(u'[\\s\\d,.<>/?:;\'\"[\\]{}()\\|~!@#$%^&*\\-_=+a-zA-Z，。《》、？：；“”‘’｛｝【】（）…￥！—┄－]+')
-        doc = pattern.sub(r'',doc)
+        doc = pattern.sub(' ',doc)
         word_index = extract_cadicateword(doc,self.max_word_len)
         word_cad = {} #后选词的字典
         for suffix in word_index:
