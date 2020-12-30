@@ -1,6 +1,9 @@
 # **新词发现算法**(**New Word Detection**)   
 
-Difference with the original fork: Updated to python 3
+Difference with the original fork: 
+1. 更新至python3 Updated to python 3
+2. 针对原本就带 空格/符号/拆分符号 的语料做一些优化 Optimize for corpus with space/split symbol
+
 
 **参考：**  
 **Reference:**  
