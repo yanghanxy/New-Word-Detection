@@ -1,8 +1,8 @@
 # **新词发现算法**(**New Word Detection**)   
 
-Difference with the original fork: 
-1. 更新至python3 Updated to python 3
-2. 针对原本就带 空格/符号/拆分符号 的语料做一些优化 Optimize for corpus with space/split symbol
+与 NCXavier 原本 repo 的区别 (Difference with the original fork):
+1. 更新至python3 (Updated to python 3)
+2. 针对原本就带 空格/符号/拆分符号 的语料做一些优化 (Optimize for corpus with space/split symbol)
 
 
 **参考：**  
