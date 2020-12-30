@@ -8,7 +8,13 @@ def extract_cadicateword(_doc,_max_word_len):
     doc_length = len(_doc)
     for i in range(doc_length):
         for j in range(i+1, min(i+1+_max_word_len,doc_length+1)):
-            indexes.append((i,j))
+            skip_flag = False
+            for k in range(i, j):
+                if _doc[k] == " ":
+                    skip_flag = True
+                    break
+            if not skip_flag:
+                indexes.append((i, j))
     return sorted(indexes, key = lambda _word:_doc[_word[0]:_word[1]])
 
 def gen_bigram(_word_str):
